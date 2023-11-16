@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Recipe Book Website</title>
+        <link rel="stylesheet" href="recipe.css">
+    </head>
+
+    <body>
+                
+        <div class="container">
+            <img src="table.jpg" alt="" class="img" />
+        
+            <div class="overlay">
+                <div class="title">
+                    <h2>- Recipe Book -</h2>
+                </div>
+        
+                <div class="description">
+                    <h3>Discover, savor, and personalize your culinary adventure. Search and add recipes effortlessly, creating your own flavorful story.</h3>
+                </div>
+        
+                <div class="search">
+                    <input type="text" id="input" placeholder="Search for recipes, ingredients ..." />
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="add-new"> 
+            <h3>Add Recipe</h3>
+            <!-- Add Recipe form -->
+            <form class="add" id="recipeForm">
+                <input type="text" id="recipeName" placeholder="Add a recipe name" required/>
+                <input type="text" id="ingredients" placeholder="Add the ingredients here" required/>
+                <input type="text" id="method" placeholder="Add the method" required/>
+                <button class="btn1" type="submit">Add Recipe</button>
+            </form>
+        </div>
+
+        <div id="recipe-list">
+            <button class="delete-btn" type="submit">Delete</button>
+
+        </div>
+        <script src="recipe.js"></script>
+    </body>
+    </html>
